@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body{
+      background-color: #292929;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+    h1{
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 40px;
+      margin-bottom: 0%;
+    }
+    h2{
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+      margin: 0px;
+    }
+    hr{
+      margin: 30px;
+    }
+    .container{
+      height: 746px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px ;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+      background-color: black;
+      align-content: center;
+    }
+    .red{
+      background-color: #E72F24;
+    }
+    .white{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+    .black{
+      background-color: #232629;
+    }
+    .blue{
+      background-color: #004592;
+    }
+    .yellow{
+      background-color: #F9D01E;
+    }
+    #topright{
+      grid-column: span 3;
+      grid-row: span 1;
+    }
+    #spanner{
+      grid-column: span 2;
+    }
+    #bottom{
+      grid-row: span 1;
+    }
+    #border{
+      border-bottom: 10px solid black;
+    }
+    */
+  </style>
+</head>
+
+<body>
+
+  <h1>Mondrian Painting In CSS</h1>
+  <h2>By Humans, Not Machines</h2>
+  <hr>
+
+  <div class="container">
+    <div class="red"></div>
+    <div class="white" id="topright"></div>
+    <div class="white"></div>
+    <div class="white" id="spanner"></div>
+    <div class="blue" id="border"></div>
+    <div class="white"></div>
+    <div class="white" id="bottom"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
+  </div>
+  <!-- Write your HTML here -->
+</body>
+
+</html>
